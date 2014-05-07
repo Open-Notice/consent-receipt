@@ -1,0 +1,13 @@
+<html>
+  <body>
+  <p><input placeholder="your email address"></p>
+  <p><input type="submit" value="I have read the Terms and Agree"
+          onclick="go();"></p>
+  </body>
+  <script>
+    function go() {
+      document.body.innerHTML = '<a href="data:,'+genReceipt()
+          +'">receipt</a>';
+    }
+  </script>
+</html>
