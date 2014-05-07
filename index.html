@@ -7,20 +7,20 @@
   </body>
   <script>
     function genReceipt() {
-      return '{\n',
-        + '  "@context": "http://opennotice.org/spec/receipt-0.1",\n',
-        + '  "receipt":{\n',
-        + '    "timestamp": '+(new Date().getTime()+',\n',
-        + '    "userId": "'+document.getElementById('email').value+'",\n',
-        + '    "dialogUrl": "http://michielbdejong.github.io/consent-receipt/",\n',
-        + '    "dnt": true,\n',
-        + '    "revokeUrl": "http://michielbdejong.github.io/consent-receipt/quit",\n',
-        + '    "policyUrls": [\n',
-        + '      "http://michielbdejong.github.io/consent-receipt/terms",\n',
-        + '      "http://michielbdejong.github.io/consent-receipt/privacy"\n',
-        + '    ]\n',
-        + '  },\n',
-        + '  "jsonSignature": "tr0tberoijawflekrjg5wrgtbghdfgrt09rtgjw5tbrthe5ztntr"\n',
+      return '{\n'
+        + '  "@context": "http://opennotice.org/spec/receipt-0.1",\n'
+        + '  "receipt":{\n'
+        + '    "timestamp": '+(new Date().getTime()+',\n'
+        + '    "userId": "'+document.getElementById('email').value+'",\n'
+        + '    "dialogUrl": "http://michielbdejong.github.io/consent-receipt/",\n'
+        + '    "dnt": true,\n'
+        + '    "revokeUrl": "http://michielbdejong.github.io/consent-receipt/quit",\n'
+        + '    "policyUrls": [\n'
+        + '      "http://michielbdejong.github.io/consent-receipt/terms",\n'
+        + '      "http://michielbdejong.github.io/consent-receipt/privacy"\n'
+        + '    ]\n'
+        + '  },\n'
+        + '  "jsonSignature": "tr0tberoijawflekrjg5wrgtbghdfgrt09rtgjw5tbrthe5ztntr"\n'
         + '}\n';
     }
     function go() {
