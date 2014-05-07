@@ -1,10 +1,27 @@
 <html>
   <body>
-  <p><input placeholder="your email address"></p>
+  <h2>Sign up for our service</h2>
+  <p><input placeholder="your email address" id="email"></p>
   <p><input type="submit" value="I have read the Terms and Agree"
           onclick="go();"></p>
   </body>
   <script>
+    function genReceipt() {
+      return {
+        "receipt":{
+          "timestamp":1399461895858,
+          "userId":document.getElementById('email').value,
+          "dialogUrl":"http://example.com/signup",
+          "dnt":true,
+          "revokeUrl":"http://example.com/quit",
+          "consents": [
+            "http://example.com/terms",
+            "http://example.com/privacy"
+          ]
+        },
+        "jsonSignature":"tr0tberoijawflekrjg5wrgtbghdfgrt09rtgjw5tbrthe5ztntr"
+      };
+    }
     function go() {
       document.body.innerHTML = '<a href="data:,'+genReceipt()
           +'">receipt</a>';
