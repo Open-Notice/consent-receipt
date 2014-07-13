@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="css/style.css" TYPE="text/css" MEDIA="screen" />
+<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/lodash.compat.min.js"></script>
+<script type="text/javascript" src="xdi.js"></script>
+
+<script type="text/javascript">
+
+function go() {
+	$("#receiptpopup").show();
+}
+
+</script>
+</head>
+
+  <body>
+
+	<img src="img/fakeamazon.png">
+
+	<div style="width:100%">
+	<div id="receiptpopup">
+	<iframe src="iframe_receipt.html" frameBorder="0"></iframe>
+	</div>
+	</div>
+  <h2>Sign up for our service</h2>
+  <p>e-mail address: <input placeholder="your email address" id="email"></p>
+  <p>adress: <input placeholder="your street" id="email"></p>
+  <p>adress: <input placeholder="your postal code" id="email"></p>
+  <p>adress: <input placeholder="your country" id="email"></p>
+  <p><input type="submit" style="padding: 30px" value="I have read the Terms and Agree"
+          onclick="go();"></p>
+  </body>
+
+</html>
